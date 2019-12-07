@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+            background: white;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+        }
+        #video{
+            border: 1px solid #ccc;
+        }
+        #canvas, #frameCanvas{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #canvas{
+            z-index: 10;
+        }
+        #img{
+            width: 320px;
+            height: 240px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- <img id="img" src="./d6da-heqpwqy1569340.jpg" /> -->
+        <video id="video" autoplay muted>
+            您的浏览器不支持video标签
+        </video>
+        <canvas id="frameCanvas"></canvas>
+        <canvas id="canvas"></canvas>
+        <!-- <input id="takepicture" type="file" accept="image/*" capture="camera"> -->
+        <!-- <canvas id="photo" style="margin-top: 300px;"></canvas>
+        <canvas id="min"></canvas>
+        <canvas id="max"></canvas> -->
+        <!-- <button onclick="init()">take</button> -->
+    </div>
+    <div class="wrapper">
+        <canvas id="photo" style="margin-top: 30px;"></canvas>
+    </div>
+    
+    <script src="./js/face-api.min.js"></script>
+    <script src="./js/face-check.js?version=1.0.0"></script>
+</body>
+</html>

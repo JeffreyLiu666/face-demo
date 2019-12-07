@@ -1,0 +1,29 @@
+{
+  "name": "face-demo",
+  "version": "1.0.0",
+  "description": "face-check",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./express.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffreyLiu666/face-demo.git"
+  },
+  "keywords": [
+    "face"
+  ],
+  "author": "jeffrey.liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeffreyLiu666/face-demo/issues"
+  },
+  "homepage": "https://github.com/JeffreyLiu666/face-demo#readme",
+  "dependencies": {
+    "address": "^1.1.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "portfinder": "^1.0.25"
+  }
+}
